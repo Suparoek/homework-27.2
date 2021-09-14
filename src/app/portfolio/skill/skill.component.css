@@ -1,0 +1,32 @@
+.mat-list-item {
+    margin-bottom: 5px;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+li {
+    color: white;
+}
+
+.card {
+    margin-top: 20px;
+    border: 2px solid black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: brown;
+}
+
+.card-body {
+    background-color: cornsilk;
+    max-height: 1200px;
+}
+
+.mat-list-item:hover {
+    border: 2px solid white;
+}
+
+.card:hover {
+    border: 2px solid white;
+}
