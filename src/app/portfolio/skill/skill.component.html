@@ -3,16 +3,10 @@
         <div class="col-sm-6">
             <div class="card">
                 <h2>Basic skill</h2>
-                <mat-list role="list">
+                <mat-list role="list" *ngFor="let basic of basics">
 
                     <mat-list-item role="listitem" class="bg-danger">
-                        <li>Microsoft office(word,execl,powerpoint,)</li>
-                    </mat-list-item>
-                    <mat-list-item role="listitem" class="bg-danger">
-                        <li>install Microsoft window7,8,10, ubuntu,</li>
-                    </mat-list-item>
-                    <mat-list-item role="listitem" class="bg-danger">
-                        <li>zoom,AnyDesk,Teamviewer</li>
+                        <li>{{basic.name}}</li>
                     </mat-list-item>
                 </mat-list>
             </div>
@@ -20,22 +14,10 @@
         <div class="col-sm-6">
             <div class="card">
                 <h2>skill</h2>
-                <mat-list role="list">
+                <mat-list role="list" *ngFor="let skill of skills">
 
                     <mat-list-item role="listitem" class="bg-danger">
-                        <li>python,Django Fameworks</li>
-                    </mat-list-item>
-                    <mat-list-item role="listitem" class="bg-danger">
-                        <li>php,laravel Fameworks</li>
-                    </mat-list-item>
-                    <mat-list-item role="listitem" class="bg-danger">
-                        <li>MySQL,Microsoft SQL Server</li>
-                    </mat-list-item>
-                    <mat-list-item role="listitem" class="bg-danger">
-                        <li>HTML,CSS,JS</li>
-                    </mat-list-item>
-                    <mat-list-item role="listitem" class="bg-danger">
-                        <li>DOCKER</li>
+                        <li>{{skill.name}}</li>
                     </mat-list-item>
                 </mat-list>
             </div>
@@ -45,15 +27,9 @@
         <div class="col-sm-6">
             <div class="card">
                 <h2>Certificeate</h2>
-                <mat-list role="list">
+                <mat-list role="list" *ngFor="let cert of certs">
                     <mat-list-item role="listitem" class="bg-danger">
-                        <li>Website Devlopment with python-Django Framework at Cons Robotics.co.Ltd</li>
-                    </mat-list-item>
-                    <mat-list-item role="listitem" class="bg-danger">
-                        <li>ux/ui Design CTF02 at thai Programmer</li>
-                    </mat-list-item>
-                    <mat-list-item role="listitem" class="bg-danger">
-                        <li>Basic HTML CSS JS CTF02 at thai Programmer</li>
+                        <li>{{cert.name}}</li>
                     </mat-list-item>
                 </mat-list>
             </div>

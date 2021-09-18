@@ -3,16 +3,16 @@
         <div class="img-center">
             <img mat-card-image src="../../../assets/img1.jpg" alt="Photo of a Shiba Inu" style="width: 250px; height: 250px;">
         </div>
-        <mat-card-content>
+        <mat-card-content *ngFor="let item of abouts; index as i">
             <div class="row bg-danger">
-                <mat-icon class="col-2">lightbulb</mat-icon>
-                <p class="col-5">พร้อมเรียนรู้และสู้งาน</p>
+                <mat-icon class="col-2">{{item.icon}}</mat-icon>
+                <p class="col-12">{{item.name}} <br>{{item.no}}<br>{{item.grah}}</p>
             </div>
         </mat-card-content>
-        <mat-card-content>
+        <!-- <mat-card-content>
             <div class="row bg-danger">
                 <mat-icon class="col-2">school</mat-icon>
-                <p class="col-12"> Kanchanapisekwittayalai Chachengsao <br> junior high school
+                <p class="col-12">{{[item]}} <br> {{item.index}}
                 </p>
             </div>
         </mat-card-content>
@@ -31,6 +31,6 @@
                     <br> 2.06
                 </p>
             </div>
-        </mat-card-content>
+        </mat-card-content>-->
     </mat-card>
 </div>

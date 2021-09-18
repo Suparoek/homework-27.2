@@ -6,28 +6,10 @@
                     <mat-icon>contact_page</mat-icon>
                     ติดต่อ
                 </h2>
-                <mat-card-content>
+                <mat-card-content *ngFor="let contact of contacts">
                     <div class="row icon-display">
-                        <mat-icon class="col-2">phone_in_talk</mat-icon>
-                        <p class="col-10">0970060704</p>
-                    </div>
-                </mat-card-content>
-                <mat-card-content>
-                    <div class="row">
-                        <mat-icon class="col-2">alternate_email</mat-icon>
-                        <p class="col-10">suparoekmuang@gmail.com</p>
-                    </div>
-                </mat-card-content>
-                <mat-card-content>
-                    <div class="row">
-                        <mat-icon class="col-2">work</mat-icon>
-                        <p class="col-10">github.com/Suparoek</p>
-                    </div>
-                </mat-card-content>
-                <mat-card-content class="buttom">
-                    <div class="row">
-                        <mat-icon class="col-2">question_answer</mat-icon>
-                        <p class="col-10">IDLINE: script_beer</p>
+                        <mat-icon class="col-2">{{contact.icon}}</mat-icon>
+                        <p class="col-10">{{contact.con}}</p>
                     </div>
                 </mat-card-content>
             </div>

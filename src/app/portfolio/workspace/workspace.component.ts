@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { BackendService } from 'src/app/backend.service';
 
 @Component({
   selector: 'app-workspace',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./workspace.component.css']
 })
 export class WorkspaceComponent implements OnInit {
-
-  constructor() { }
+  Works:Array<any> = new Array();
+  constructor(private service:BackendService) { 
+    this.Works = this.service.getworkspace();
+  }
 
   ngOnInit(): void {
   }
